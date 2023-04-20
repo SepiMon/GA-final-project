@@ -1,0 +1,530 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header {
+  margin: 0px;
+}
+.childcare-logo-container {
+  display: flex;
+  align-items: center;
+}
+.childcare-name {
+  color: white;
+  padding-right: 2rem;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.main-nav {
+  background-color: darkgreen;
+  height: 80px;
+  margin-bottom: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left-nav a,
+.right-nav a {
+  text-decoration: none;
+  padding: 1em;
+  font-weight: bold;
+  color: coral;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.dropdown {
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav a,
+.dropdown {
+  display: flex;
+  text-decoration: none;
+}
+.childcare-logo {
+  border-radius: 50px;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin: 40px;
+  padding: 0px;
+}
+
+.sub-menu {
+  width: 200px;
+  position: absolute;
+  background: white;
+  display: none;
+  top: 60px;
+  z-index: 100;
+}
+.sub-menu a {
+  padding: 16px 32px 16px 16px;
+}
+.sub-menu a:hover {
+  background: blanchedalmond;
+  display: block;
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+}
+.dropdown a {
+  height: 100%;
+}
+.button-primary {
+  background-color: beige;
+  color: lightgreen;
+  border: 1px;
+}
+.button-primary,
+.button-secondary {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pure-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  zoom: 0.75;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: darkseagreen;
+  margin: 0px;
+  padding: 1rem;
+}
+.welcome-title {
+  font-style: italic;
+  color: darkgreen;
+}
+
+.welcome-desc {
+  text-align: center;
+  color: darkgreen;
+  margin: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+}
+.welcome-container {
+  width: 100%;
+  height: auto;
+  background-image: url("https://files.123freevectors.com/wp-content/original/108145-light-orange-wave.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  display: grid;
+}
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.welcome-title {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.welcome-button {
+  background-color: #ffa500;
+  border-bottom: 1px solid #20b2aa;
+  border-radius: 3px;
+  color: darkgreen;
+  cursor: pointer;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+}
+.welcome-button:hover {
+  background-color: blanchedalmond;
+}
+.font-icon {
+  font-size: 18px;
+  background-color: #ffa60070;
+  border-radius: 50%;
+  padding: 12px 13px;
+  cursor: pointer;
+}
+.center-map-icon,
+.center-phone-icon,
+.center-email-icon {
+  width: 25px;
+  height: 25px;
+}
+.center-map-container,
+.center-phone-container,
+.center-email-container,
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.center-phone,
+.center-email,
+.center-address {
+  padding-left: 10px;
+  color: darkgreen;
+}
+.address-details {
+  padding: 15px 0;
+}
+
+.center-container-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #ffebcd;
+  background-color: #ffebcd;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.container-details {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-center-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.center-container {
+  width: 50%;
+}
+.center-tour-one {
+  padding: 0.7em 1.5em;
+  margin-top: 10px;
+  background: #ff8c00;
+  color: #eee;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-pic-one {
+  width: 50%;
+  height: 325px;
+  overflow: hidden;
+}
+.button-pic-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.center-tour-two {
+  padding: 0.7em 1.5em;
+  background: #87cefa;
+  color: #000000;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-pic-two {
+  width: 50%;
+  height: 325px;
+  overflow: hidden;
+}
+.button-pic-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.metrobox-container {
+  margin: 20px 0;
+}
+.opening-hours {
+  color: darkgreen;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.progarm-container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ffe500;
+}
+.progarm-container h2 {
+  color: #ffe500;
+}
+.childcare-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.baby-care-pic {
+  position: relative;
+}
+
+/* .progarm-container{
+  
+  background-size:contain;
+  max-width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  height:600px;
+  } */
+/* @media (min-width: 1100px) {
+    #care-form {
+      flex-direction: row;
+    }
+  }
+  #care-type {
+    border: 1px solid #111;
+    border-radius: 5px;
+    color: #6b6b6c;
+    font-size:18px;
+    height:50px;
+    margin:0 0 25px 0;
+    padding:0px 30px;
+    width:calc(100%-120px);
+  
+  }
+  @media (min-width: 800px) {
+    #care-type {
+      font-size:18px;
+      width:350px;
+    }
+  }
+  @media (min-width: 1100px) {
+    #care-type {
+      margin: 0 25px 0 0;
+    } */
+/* }
+  #submit-btn {
+    background: #ffe500;
+    color: #000;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    width: 100px;
+    height:35px;
+    border-radius:5px;
+    margin-top: 5px;
+   
+
+  }
+  @media (min-width: 1100px) {
+    #submit-btn {
+      font-size:18px;
+    } */
+/* }
+  #submit-btn:hover {
+    background:brown;
+  }
+.baby-care{
+  background-image: url("https://images.unsplash.com/photo-1595930013415-ca6958dc8a8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpbGRjYXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.care-one{
+ background-color:url("https://www.freewordcentre.com/wp-content/uploads/2022/08/childcare-services-in-australia.jpg")
+}
+.care-two{
+background-image:url("https://images.unsplash.com/photo-1533574612789-7af335ee5f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+} */
+
+.our-staff-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: blanchedalmond;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.our-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  cursor: pointer;
+}
+
+.our-people-pic {
+  width: 350px;
+  height: 350px;
+  border: 1px solid blanchedalmond;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+#our-people-position-Educator,
+#our-people-position-Chef,
+#our-people-position-Manager {
+  visibility: hidden;
+  background-color: #ffa60070;
+  padding: 10px 30px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.our-people-position-Educator {
+  visibility: hidden;
+  background-color: #ffa60070;
+  padding: 10px 30px;
+}
+.childcare-footer {
+  align-items: center;
+  background-color: darkgreen;
+  color: white;
+}
+.footer-datails {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+.follow {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.social-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.social-icon {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.social-icon i {
+  background-color: #c4c4c4ab;
+  padding: 10px 11px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.social-icon a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.name-coach {
+  margin: 30px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+hr {
+  border: 2px solid blanchedalmond;
+  margin-bottom: 40px;
+  width: 95%;
+}
+@media only screen and (max-width: 900px) {
+  .our-staff-container {
+    flex-direction: column;
+  }
+  .our-people-pic {
+    width: 200px;
+    height: fit-content;
+    object-fit: cover;
+  }
+  .footer-datails {
+    flex-direction: column;
+    width: 72%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .follow {
+    margin: 20px 0;
+  }
+  .container-details {
+    flex-direction: column;
+  }
+  .center-container {
+    width: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .button-pic-one {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+  }
+  .element.style {
+    margin: 20px 0;
+  }
+  .center-tour-one .button-pic-one img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .button-pic-two {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+  }
+  .button-pic-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .display-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .childcare-name {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .display-nav {
+    display: none;
+  }
+  .head-line{
+    display: none;
+  }
+}
+@media only screen and (max-width: 944px) {
+  .our-staff-container {
+    flex-direction: column;
+  }
+}
+

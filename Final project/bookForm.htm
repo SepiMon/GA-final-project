@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book-form</title>
+    <link rel="stylesheet" href="assets/css/bookForm.css" />
+  </head>
+  <body>
+    <h1>Book a Tour</h1>
+
+    <form id="tour-book">
+      <fieldset>
+        <legend>Guardian Information</legend>
+        <div class="Gurdians">
+          <div class="tour-form-row">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="First"
+              id="name"
+              class="first-name-field"
+            />
+            <input type="text" name="last-name" placeholder="Last" />
+          </div>
+          <br />
+          <div class="tour-form-row">
+            <label for="email">Email Address</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              id="email"
+              class="email-address-field"
+            />
+            <label for="date">Date Of Birth</label>
+            <input
+              type="date"
+              name="dateof birth"
+              placeholder="Date Of Birth"
+              id="date"
+              class="date-birth-field"
+            />
+          </div>
+          <br />
+          <div class="tour-form-row">
+            <label for="phone">Mobile Number</label>
+            <input
+              type="text"
+              name="Mobile number"
+              placeholder="Mobile Number"
+              id="mobile-number"
+              class="phone-number-field"
+            />
+            <label for="phone">Work Number </label>
+            <input
+              type="text"
+              name="work number"
+              placeholder="Work Number"
+              id="work-number"
+              class="work-number-field"
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Child Information</legend>
+
+        <div class="Children">
+          <div class="tour-form-row">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="First"
+              id="name"
+              class="first-name-field"
+            />
+            <input type="text" name="last-name" placeholder="Last" />
+          </div>
+          <br />
+          <div class="tour-form-row">
+            <label for="date">Date Of Birth</label>
+            <input
+              type="date"
+              name="date of birth"
+              placeholder="Date Of Birth"
+              id="date"
+              class="Date-birth-field"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="tour-form-row">
+          <label for="Other Information">Other Information</label>
+          <textarea name="Other Information" id="Other Information"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Would you like to select a day to book a tour?</legend>
+        <div class="tour-form-row">
+          <label>Weekdays</label>
+          <div class="field-container day-fields">
+            <input type="radio" name="Day" id="dayone" value="Monday" />
+            <label for="dayone">Monday</label>
+            <br />
+            <input type="radio" name="Day" id="daytwo" value="Tuseday" />
+            <label for="daytwo">Tuseday</label>
+            <br />
+            <input type="radio" name="Day" id="daythree" value="Wednesday" />
+            <label for="daythree">Wednesday</label>
+            <br />
+            <input type="radio" name="Day" id="dayfour" value="Thursday" />
+            <label for="dayfour">Thursday</label>
+            <br />
+            <input type="radio" name="Day" id="dayfour" value="Friday" />
+            <label for="dayfive">Friday</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="submit">
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
