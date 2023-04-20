@@ -1,6 +1,6 @@
 
 function myFunctionEducator() {
-    var getText = document.getElementById("our-people-position-Educator");
+   const getText = document.getElementById("our-people-position-Educator");
     if (getText.style.visibility === "visible") {
         getText.style.visibility = "hidden";
     } else {
@@ -8,7 +8,7 @@ function myFunctionEducator() {
     }
 }
 function myFunctionChef() {
-    var getText = document.getElementById("our-people-position-Chef");
+   const getText = document.getElementById("our-people-position-Chef");
     if (getText.style.visibility === "visible") {
         getText.style.visibility = "hidden";
     } else {
@@ -16,7 +16,7 @@ function myFunctionChef() {
     }
 }
 function myFunctionManager() {
-    var getText = document.getElementById("our-people-position-Manager");
+   const getText = document.getElementById("our-people-position-Manager");
     if (getText.style.visibility === "visible") {
         getText.style.visibility = "hidden";
     } else {
